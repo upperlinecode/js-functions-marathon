@@ -16,11 +16,11 @@ describe('decimalToTime(time)', function(){
   })
 })
 
-describe('paceToMarathonTime(minutes,seconds)', function(){
-  it('receives two integers (minutes and seconds) and returns the calculated marathon time at that pace',function(){
-    expect(paceToMarathonTime("00:06:50")).toEqual("Expected marathon time 02:59:02")
-    expect(paceToMarathonTime("00:10:01")).toEqual("Expected marathon time 04:22:26")
-    expect(paceToMarathonTime("00:06:50")).toEqual("Expected marathon time 04:10:13")
+describe('paceToMarathonTime(pace)', function(){
+  it('receives a string (pace) and returns the calculated marathon time at that pace',function(){
+    expect(paceToMarathonTime("00:06:50")).toEqual("Expected marathon time 02:59:03")
+    expect(paceToMarathonTime("00:10:01")).toEqual("Expected marathon time 04:22:22")
+    expect(paceToMarathonTime("00:08:44")).toEqual("Expected marathon time 03:48:53")
   })
 })
 
