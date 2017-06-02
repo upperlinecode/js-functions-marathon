@@ -10,7 +10,7 @@ Fork and clone this lab, and then cd into the lab directory. Run `npm install` t
 
 You'll be writing javascript functions inside of `marathon_functions.js` - each function will perform a different task to help Karlie with her training! Remember that a marathon is 26.2 Miles of running!
 
-+ Create a function called `timeToDecimal()` that takes in three integers (hours, minutes, seconds) and converts this to decimal number of hours. For example:
++ Create a function called `timeToDecimal()` that takes in a string with hours, minutes and seconds, and converts this to decimal number of hours. For example:
 
 ```js
 timeToDecimal("0:30:0") // 0 hours, 30 minutes, 0 seconds
