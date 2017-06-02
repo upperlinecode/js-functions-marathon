@@ -1,50 +1,32 @@
 
-describe('shout(string)', function() {
-  it('receives one argument and returns it in all caps', function() {
-    expect(shout('hello')).toEqual('HELLO')
+describe('timeToDecimal(time)', function() {
+  it('receives a string as a time and returns a float of the converted time to decimal', function() {
+    expect(timeToDecimal("0:15:0")).toEqual(0.25)
+    expect(timeToDecimal("1:45:30")).toEqual(1.7584)
+    expect(timeToDecimal("3:22:08")).toEqual(3.3689)
   })
 })
 
-describe('whisper(string)', function() {
-  it('receives one argument and returns it in all lowercase', function() {
-    expect(whisper('HELLO')).toEqual('hello')
+
+describe('decimalToTime(time)', function(){
+  it('receives a time as a decimal and returns a string with hours:minutes:seconds', function(){
+    expect(decimalToTime(1.5)).toEqual("01:30:00")
+    expect(decimalToTime(2.3125)).toEqual("02:18:45")
+    expect(decimalToTime(0.9256)).toEqual("00:55:32")
   })
 })
 
-describe('logShout(string)', function() {
-  it('calls console.log() its one argument in all caps', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logShout('hello')
-
-    expect(spy).toHaveBeenCalledWith('HELLO')
-
-    console.log.restore()
+describe('paceToMarathonTime(minutes,seconds)', function(){
+  it('receives two integers (minutes and seconds) and returns the calculated marathon time at that pace',function(){
+    expect(paceToMarathonTime(6,50)).toEqual("Expected marathon time 02:59:02")
+    expect(paceToMarathonTime(10,01)).toEqual("Expected marathon time 04:22:26")
+    expect(paceToMarathonTime(6,50)).toEqual("Expected marathon time 04:10:13")
   })
 })
 
-describe('logWhisper(string)', function() {
-  it('calls console.log() its one argument in all lowercase', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logWhisper('HELLO')
-
-    expect(spy).toHaveBeenCalledWith('hello')
-
-    console.log.restore()
-  })
-})
-
-describe('sayHiToGrandma(string)', function() {
-  it('returns "I can\'t hear you!" if `string` is lowercase', function() {
-    expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
-  })
-
-  it('returns "YES INDEED!" if `string` is uppercase', function() {
-    expect(sayHiToGrandma('HELLO')).toEqual("YES INDEED!")
-  })
-
-  it('returns "I love you, too." if `string` is "I love you, Grandma."`', function() {
-    expect(sayHiToGrandma("I love you, Grandma.")).toEqual("I love you, too.")
+describe('marathonToPacePerMile(time)', function(){
+  it('receives a marathon time and returns the pace per mile to complete at that time', function(){
+    expect(marathonToPacePerMile("2:59:02")).toEqual("Pace time 06:50")
+    expect(marathonToPacePerMile("4:05:16")).toEqual("Pace time 09:22")
   })
 })
