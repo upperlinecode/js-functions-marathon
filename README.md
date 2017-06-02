@@ -6,6 +6,8 @@ Karlie is training for the New York Marathon this year, and she needs your help!
 
 ## Instructions
 
+Fork and clone this lab, and then cd into the lab directory. Run `npm install` to install the needed dependencies. Open `index.html` to see the tests, and follow along with the instructions below to get them to pass.
+
 You'll be writing javascript functions inside of `marathon_functions.js` - each function will perform a different task to help Karlie with her training! Remember that a marathon is 26.2 Miles of running!
 
 + Create a function called `timeToDecimal()` that takes in three integers (hours, minutes, seconds) and converts this to decimal number of hours. For example:
