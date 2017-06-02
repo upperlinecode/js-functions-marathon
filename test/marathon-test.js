@@ -2,7 +2,7 @@
 describe('timeToDecimal(time)', function() {
   it('receives a string as a time and returns a float of the converted time to decimal', function() {
     expect(timeToDecimal("0:15:0")).toEqual(0.25)
-    expect(timeToDecimal("1:45:30")).toEqual(1.7584)
+    expect(timeToDecimal("1:45:30")).toEqual(1.7583)
     expect(timeToDecimal("3:22:08")).toEqual(3.3689)
   })
 })
@@ -18,9 +18,9 @@ describe('decimalToTime(time)', function(){
 
 describe('paceToMarathonTime(minutes,seconds)', function(){
   it('receives two integers (minutes and seconds) and returns the calculated marathon time at that pace',function(){
-    expect(paceToMarathonTime(6,50)).toEqual("Expected marathon time 02:59:02")
-    expect(paceToMarathonTime(10,01)).toEqual("Expected marathon time 04:22:26")
-    expect(paceToMarathonTime(6,50)).toEqual("Expected marathon time 04:10:13")
+    expect(paceToMarathonTime("00:06:50")).toEqual("Expected marathon time 02:59:02")
+    expect(paceToMarathonTime("00:10:01")).toEqual("Expected marathon time 04:22:26")
+    expect(paceToMarathonTime("00:06:50")).toEqual("Expected marathon time 04:10:13")
   })
 })
 

@@ -38,16 +38,16 @@ decimalToTime(4.25)
 
 (You'll want to use those two functions as part of the next few)
 
-+ Create a function `paceToMarathonTime()` that takes in the pace per mile as two integers (minutes, seconds) and returns the total amount of time the marathon will take to complete (this should return a string that says "Expected Marathon time 4:25:13")
++ Create a function `paceToMarathonTime()` that takes in the pace per mile and returns the total amount of time the marathon will take to complete (this should return a string that says "Expected Marathon time 4:25:13")
 
 ```js
-paceToMarathonTime(8,15)
+paceToMarathonTime("00:08:15")
 //returns "Expected marathon time 03:36:09"
 
-paceToMarathonTime(9,18)
+paceToMarathonTime("00:09:18")
 //returns "Expected marathon time 04:03:39"
 
-paceToMarathonTime(11,12)
+paceToMarathonTime("00:11:12")
 //returns "Expected marathon time 04:53:26"
 ```
 
