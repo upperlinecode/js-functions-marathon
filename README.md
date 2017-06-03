@@ -61,7 +61,9 @@ marathonToPacePerMile("03:33:12")
 //returns "Pace time 08:08"
 ```
 ## Bonus
+
 *There are no tests for this bonus*
+
 Find out the distance covered in each NYC Borough for the NYC marathon. Create a function `paceInBoroughToTime()` that takes in the name of the borough and the running pace. The function should return the total time that the runner will be in that borough
 
 ## Concepts to Google
