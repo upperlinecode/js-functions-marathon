@@ -1,8 +1,6 @@
 # Marathon Functions
 
-![Karlie](karlie-run.jpg)
-
-Karlie is training for the New York Marathon this year, and she needs your help! In this lab, you'll be building javascript functions to help calculate pace, distance, travel time, and more. Good luck!
+Danny is training for the New York Marathon this year, and he needs your help! In this lab, you'll be building javascript functions to help calculate pace, distance, travel time, and more. Good luck!
 
 ## Instructions
 
@@ -51,7 +49,7 @@ paceToMarathonTime("00:11:12")
 //returns "Expected marathon time 04:53:26"
 ```
 
-+ Perhaps Karlie is trying to run her race under a certain time. If so, she'll need to know her pace per mile. Create a function `marathonToPacePerMile()` that takes in a total marathon time and returns the pace per mile to hit that time:
++ Perhaps Danny is trying to run her race under a certain time. If so, he'll need to know her pace per mile. Create a function `marathonToPacePerMile()` that takes in a total marathon time and returns the pace per mile to hit that time:
 
 ```js
 marathonToPacePerMile("04:20:02")
